@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script type="text/javascript">
+        var date = Date.now();
+        var today = new Date (date);
+        var todayYear = today.getFullYear();
+        //console.log(todayYear);
+
+    
+
+        var userAnswer = confirm("Do you eat steak?");
+        var userBirthYear = prompt("What year were you born (yyyy)");
+        var age = todayYear - Number(userBirthYear);
+
+        if (age < 21) {
+            var young =  "No sake for you little girl!";
+        }
+        else {
+            var old = "Sake Sake Sake!";
+        }
+
+
+        if (userAnswer) {
+            if (age < 21) {
+                document.write ("Here's a steak sandwich!" + young)
+            } else  {
+                document.write ("Here's a steak sandwich!" + old)
+            }
+        } else {
+            if (age < 21) {
+                document.write ("Here's a tofu-stir-fry!" + young)
+            } else {
+                document.write ("Here's a tofu story-fry" + old)
+            };
+    
+        };
+        
+        </script>
+    </body>
+</html>
